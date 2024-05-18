@@ -1,0 +1,22 @@
+int a is 0.
+loop 5 times{
+    a is a+1.
+    write a.
+    newLine.
+}
+int x, y, z.
+x is 31, y is 69, z is 100.
+loop 2 times write x.
+newLine.
+int index is 1.
+loop 2 times{
+    loop 2 times{
+        loop 2 times{
+            write "otuzbirr".
+            write " ".
+            write index.
+            index is index + 1.
+            newLine.
+        }
+    }
+}
