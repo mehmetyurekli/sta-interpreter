@@ -146,6 +146,7 @@ int doAssignments(Token tokens[], Token currentToken, int i, bool new, varType t
                 }
                 else
                 {
+                    variables[variableIndex].type = STRING;
                     strcpy(variables[variableIndex].name, currentToken.value);
                     variableIndex++;
                 }
@@ -229,9 +230,9 @@ int doAssignments(Token tokens[], Token currentToken, int i, bool new, varType t
                         }
                         else
                         {
-                            printf("negative value.");
+                            printf("negative value.\n");
                             variables[index].value.intValue = 0;
-                            return -1;
+                            return i;
                         }
                     }
                     else
